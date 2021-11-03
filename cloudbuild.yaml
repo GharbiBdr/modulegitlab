@@ -2,7 +2,7 @@ steps:
 - name: gharbibdr/terraform:alpine
   args: ['terraform', "init"]
 
-- name: hashicorp/terraform:0.13.0
+- name: gharbibdr/terraform:alpine
   args: ['terraform', 'apply -auto-approve']
 
 timeout: 2600s
