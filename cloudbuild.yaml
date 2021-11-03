@@ -4,5 +4,7 @@ steps:
 
 - name: gharbibdr/terraform:alpinev1
   args: ['apply', '-auto-approve']
+- name: gharbibdr/terraform:alpinev1
+  args: ['destroy', '-auto-approve']
 
 timeout: 2600s
