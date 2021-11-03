@@ -1,8 +1,8 @@
 steps:
-- name: gharbibdr/terraform:alpine
-  args: ['terraform', "init"]
+- name: gharbibdr/terraform:alpinev1
+  args: ['init']
 
-- name: gharbibdr/terraform:alpine
-  args: ['terraform', 'apply -auto-approve']
+- name: gharbibdr/terraform:alpinev1
+  args: ['apply', '-auto-approve']
 
 timeout: 2600s
